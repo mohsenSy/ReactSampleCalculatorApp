@@ -1,16 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/js/bootstrap.bundle.js'
 function ResultBox(props) {
   return (
-    <div className="resultbox">{props.text}</div>
+    <div className="container">{props.text}</div>
   )
 }
 
 function Box(props) {
   return (
-    <button className="box" onClick={props.onClick}>{props.text}</button>
+    <button className="btn btn-primary" onClick={props.onClick}>{props.text}</button>
   );
 }
 
